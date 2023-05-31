@@ -3,6 +3,8 @@ package com.example.H2implementation;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -28,7 +30,8 @@ public class TechWishUserDetail implements UserDetails {
 
     @Override
     public String getPassword() {
-        return "pass";
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        return passwordEncoder.encode("pass");
     }
 
     @Override
