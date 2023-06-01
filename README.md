@@ -26,8 +26,12 @@ Please note that without specific code or further information,
 this description provides a general understanding of the application's features.
 
 #Swager
+
 Swagger is integrated into the application to test the endpoints. 
 Use the url http://localhost:8080/swagger-ui.html
+
 However, please note that you need to access the endpoints from your browser 
 in order to populate the data into the database. 
+example you can request 
+http://localhost:8080/rewardPoints/1/5
 The testing logic involves populating dummy data through code using H2 database.
