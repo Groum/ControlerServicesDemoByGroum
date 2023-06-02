@@ -22,7 +22,7 @@ public class RewardsControler {
 
 
     @GetMapping("/rewardPoints/{userId}/{month}")
-    @ApiOperation("Get amount paid for a specific month")
+    @ApiOperation("Get a Reward for Specific Months")
     public String  getAmountPaidForMonth(@PathVariable Long userId, @PathVariable int month) {
 
 

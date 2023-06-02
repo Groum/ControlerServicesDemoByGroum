@@ -27,8 +27,8 @@ public class SwagerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Your API Title")
-                .description("Your API Description")
+                .title("Rewards Calculation")
+                .description("This api takes month and user ID")
                 .version("1.0.0")
                 .build();
     }
