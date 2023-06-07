@@ -1,4 +1,4 @@
-package com.example.H2implementation;
+package com.example.H2implementation.Services;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -6,6 +6,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
+import com.example.H2implementation.Model.TekWishEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

@@ -1,5 +1,6 @@
-package com.example.H2implementation;
+package com.example.H2implementation.Services;
 
+import com.example.H2implementation.Security.TechWishUserDetail;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

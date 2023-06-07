@@ -1,4 +1,5 @@
-package com.example.H2implementation;
+package com.example.H2implementation.Security;
+import com.example.H2implementation.Services.TechWishUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

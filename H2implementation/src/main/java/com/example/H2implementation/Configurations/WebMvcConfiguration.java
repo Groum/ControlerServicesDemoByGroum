@@ -1,4 +1,4 @@
-package com.example.H2implementation;
+package com.example.H2implementation.Configurations;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

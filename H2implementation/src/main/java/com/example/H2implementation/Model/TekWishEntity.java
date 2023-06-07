@@ -1,4 +1,4 @@
-package com.example.H2implementation;
+package com.example.H2implementation.Model;
 
 import javax.persistence.GenerationType;
 import javax.persistence.Entity;

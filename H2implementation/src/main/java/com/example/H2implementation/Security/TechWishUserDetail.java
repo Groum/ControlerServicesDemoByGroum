@@ -1,4 +1,4 @@
-package com.example.H2implementation;
+package com.example.H2implementation.Security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

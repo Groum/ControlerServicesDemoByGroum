@@ -3,6 +3,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import javax.transaction.Transactional;
 
+import com.example.H2implementation.Dao.TransactionRepository;
+import com.example.H2implementation.Model.TekWishEntity;
+import com.example.H2implementation.Services.TechWishDataServices;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -17,7 +20,7 @@ import org.springframework.http.ResponseEntity;
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 @AutoConfigureTestEntityManager
 @Transactional
-public class    TakeWishServiceTest {
+public class TechWishServiceTest {
 
     @Autowired
     private TestEntityManager entityManager;
