@@ -7,6 +7,7 @@ import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
 import com.example.H2implementation.Model.TekWishEntity;
+import com.example.H2implementation.TechWishAssesmentimplementationApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,8 @@ import org.springframework.stereotype.Service;
 import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Service
 public class TechWishDataServices {
@@ -21,6 +24,7 @@ public class TechWishDataServices {
     private EntityManager entityManager;
 
     private int rewardPoint;
+    private static final Logger logger = LogManager.getLogger(TechWishAssesmentimplementationApplication.class);
 
     @Transactional
     public ResponseEntity<Integer> getRewardFortheMonth(Long userId, int month) {
@@ -35,7 +39,9 @@ public class TechWishDataServices {
         Double amountPaid;
         try {
             amountPaid = query.getSingleResult();
+
         } catch (NoResultException e) {
+            logger.warn("No Data Entry!");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(0);
         }
 
@@ -59,6 +65,7 @@ public class TechWishDataServices {
                                         entityManager.persist(transaction);
                                     })
                     );
+            logger.info("Data is pouplated to the embaded Database");
 
             entityManager.flush();
         }
