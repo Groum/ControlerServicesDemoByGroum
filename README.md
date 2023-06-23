@@ -1,9 +1,11 @@
-# TechWishAssesment-
-This Java Spring Boot application is a coding assessment requested by Takewish. 
+# Demo of using controlers Ser-
+This Java Spring Boot application demonstrates implementation of Controllers services
+and JPA. 
+It also includes embedded Swagger to do API Tests
 It includes REST endpoints to calculate monthly reward points for users
 based on their Purchase.
 
-The application utilizes an embedded H2 database and includes 
+The application utilizes an embedded H2 database for testing purposes and includes 
 a method to populate the database with monthly payments for three users.
 
 When the API is called with the specified month and user ID, 
